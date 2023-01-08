@@ -39,6 +39,7 @@ app.post("/todos", async (req, res) => {
       dueDate: req.body.dueDate,
       completed: false,
     });
+    
     return res.json(todo);
   } catch (error) {
     console.log(error);
